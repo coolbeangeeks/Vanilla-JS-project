@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+main h1{
+    font-family: "Karla", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 3%;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+
+}
+.fisrtname{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.f-name{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+.f-name .errorMessage{
+    display: none;
+    color:hsl(0, 66%, 56%);
+    font-family: "Karla", sans-serif;
+}
+.email-child-box .errorMessage{
+    display: none;
+    color:hsl(0, 66%, 56%);
+    font-family: "Karla", sans-serif;
+}
+.query .errorMessage{
+    display: none;
+    color:hsl(0, 66%, 56%);
+    font-family: "Karla", sans-serif;
+}
+.form-message .errorMessage{
+    display: none;
+    color:hsl(0, 66%, 56%);
+    font-family: "Karla", sans-serif;
+}
+.agree .errorMessage{
+    display: none;
+    color:hsl(0, 66%, 56%);
+    font-family: "Karla", sans-serif;
+    margin-top: 2%;
+}
+.f-name input{
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    cursor: pointer;
+
+
+}
+.f-name input:hover{
+    border: 2px solid hsl(169, 82%, 27%);
+}
+.required{
+    color:  hsl(169, 82%, 27%);
+    padding: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+label{
+    font-size: 16px;
+    font-family: "Karla", sans-serif ;
+}
+@media (max-width:380px){
+    .fisrtname{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+        
+    }
+    .f-name{
+        width: 97%;
+        margin-top: 2%;
+    }
+    .general-flexbox{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+        margin-right: 3%;
+        gap: 5px;
+    }
+    .general{
+        flex-basis: 100%;
+
+    }
+    main{
+        width: 40vmax;
+        margin-bottom: 30px;
+    }
+    main h1{
+        font-family: "Karla", sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        margin-left: 3%;
+        margin-top: 40px;
+    
+    }
+   
+    
+}
+.email-box{
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.email-child-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-basis: 97%;
+
+}
+.email-child-box input{
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+
+}
+
+.query{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 2%;
+    gap: 5px;
+}
+.general-flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.general{
+    flex-basis: 45%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.lbl-qry{
+    margin-left: 3%;
+
+}
+.lableqry{
+    margin-left: 3%;
+}
+.form-message{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#message{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+.submit-button input{
+    border-radius: 5px;
+    width: 100%;
+    padding:10px;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight:600;
+    font-family: "Karla", sans-serif ;
+    cursor: pointer;
+}
+.agree{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.custom-checkbox{
+    border: 2px solid #ccc;
+}

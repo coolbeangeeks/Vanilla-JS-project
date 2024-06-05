@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Contact-Us</h1>
+        <form action="">
+            <div class="fisrtname">
+                <div class="f-name" id="fst">
+                    <label for="firstName">First Name<sup class="required">*</sup></label>
+                    <input type="text" name="fname" id="firstName">
+                    <p class="errorMessage">This field is required</p>
+                </div>
+                <div class="f-name" id="lst">
+                    <label for="lastName">Last Name<sup class="required">*</sup></label>
+                    <input type="text" name="lname" id="lastName">
+                    <p class="errorMessage">This field is required</p>
+                </div>
+                
+                 
+            </div>
+            <div class="email-box">
+                <div class="email-child-box" id="email-child">
+                    <label for="mailbox">Email-Address<sup class="required">*</sup></label>
+                    <input type="email" name="email-id" id="mailbox">
+                    <p class="errorMessage">Please enter a valid email address</p>
+                </div>
+            </div>
+            
+            <div class="query" id="general-id-parent">
+                <div class="lableqry">Query<sup class="required">*</sup></div>
+                <div class="general-flexbox" >
+
+                    <div class="general" id="general-id">
+                        <input type="radio" name="query-data" id="gen-q">
+                        <label for="gen-q">General-Enquiry</label>
+                        
+                    </div>
+                    <div class="general">
+                        <input type="radio" name="query-data" id="sprt">
+                        <label for="sprt">Support Request</label>
+    
+    
+                    </div>
+                
+                
+
+                </div>
+                <p class="errorMessage">Please select a query type</p>  
+            </div>
+            <div class="form-message" id="formid">
+                <label for="message">Message<sup class="required">*</sup></label>
+                <textarea id="message" name="message" rows="7" cols="50"></textarea>
+                <p class="errorMessage">This field is required</p>
+
+            </div>
+            <div class="agree" id="agr">
+                <input type="checkbox" id="agreee" name="agree" class="custom-checkbox">
+            <label for="agreee">I consent to be contacted by the teams<sup class="required">*</sup></label>
+            <p class="errorMessage">To submit the form please check the consent to being contacted</p>
+
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Submit" id="sub">
+            </div>
+        </form>
+    </main>
+<script src="form.js"></script>
+</body>
+</html>

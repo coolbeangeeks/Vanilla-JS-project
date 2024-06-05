@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: #EAE0D5;
+}
+
+
+.container{
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text-container{
+    width: 65%;
+    height: 10%;
+    background: #00171F;
+    color: #EAE0D5;
+    font-size: 2em;
+}
+.operators{
+    width: 65%;
+    height: 12%;
+    background-color: aliceblue;
+
+}
+.math-ops{
+    display: inline-block;
+    border-radius: 1px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0px;
+    width: 17%;
+    font-size: 1em;
+    height:100%;
+    color: #00171F;
+}
+.operands{
+    width: 65%;
+    height: 78%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.nums-div{
+    width: 90%;
+    height:100%;
+
+
+}
+.numeric{
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    border-radius: 1px;
+    border: 1px solid black;
+    box-sizing:border-box;
+    margin-left: 3px;
+    padding: 3px;
+}
+.AC{
+    width: 30%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+
+}
+.side{
+    width: 100%;
+    height: 50%;
+}

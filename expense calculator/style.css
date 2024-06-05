@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #fbe3e8;
+    overflow-y: auto;
+}
+
+main{
+ 
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+        margin: 0; /* Remove default margin */
+        flex-direction: column;
+        gap: 15px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#container{
+    width: 50vw;
+    height: 50vh;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+
+}
+label{
+    display: block;
+    margin-left: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight:300
+
+}
+input{
+    display: block;
+    width: 80%;
+    height: 30px;
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom:5%;
+    padding: 5px;
+    font-size: 1.4em;
+
+}
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+   margin: 0;
+} */
+input:focus {
+    border-color:blueviolet;
+    outline: none; /* Change the border color to green when the input is focused */
+}
+button{
+    margin-left: 10%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 1.2em;
+    border: 1px solid black;
+    background-color:blueviolet;
+    color: white;
+
+}
+#data-container{
+    width: 50vw;
+    height: 50vh;
+    overflow-y: auto;
+    display: none;
+
+
+}
+
+.newdiv{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+#errorMessage{
+    display: none;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1.2em;
+    margin-top: 2%;
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Main>
+        <div id="container">
+            <h1>EXPENSES</h1>
+            <label for="item">Item Name:</label>
+            <input type="text" placeholder="Enter Item Name" id="item" required>
+            <label for="Expense">Item Price:</label>
+            <input type="number" placeholder="Enter Item Rupees" id="Expense" min="0" required>
+            <button id="add">ADD</button>
+            <button id="delete">CLEAR</button>
+            <div id="errorMessage">Please fill all the field</div>
+
+        </div>
+        <div id="data-container">
+
+        </div>
+    </Main>
+    <script src="expense.js"></script>
+</body>
+</html>
