@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* You can change the background color as needed */
+}
+.main-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:35%
+}
+.stars{
+    display: flex;
+    justify-content:space-around;
+    flex-basis: 25%;
+    font-size: 2em;
+
+}
+.bi-star-fill{
+    cursor: pointer;
+}
