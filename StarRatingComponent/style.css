@@ -9,14 +9,15 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; /* You can change the background color as needed */
+    background-color: #212529; /* You can change the background color as needed */
 }
 .main-container{
     text-align: center;
     display: flex;
     flex-direction: column;
     gap:10px;
-    width:35%
+    width:35%;
+    color: #fff;
 }
 .stars{
     display: flex;
@@ -27,4 +28,17 @@ body {
 }
 .bi-star-fill{
     cursor: pointer;
+    color: white;
+}
+.stars i.filled {
+    color: #ffcc00; /* Filled star color */
+}
+@media (max-width: 600px) {
+    .main-container {
+        width: 90%; /* Adjust the width for mobile devices */
+    }
+
+    .stars i {
+        font-size: 1.5em; /* Adjust the star size for mobile devices */
+    }
 }
