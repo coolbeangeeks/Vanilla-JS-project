@@ -2,12 +2,18 @@ const stars = document.querySelectorAll('.bi-star-fill');
 const ratingValue = document.getElementById('rating-value');
 let currentRating = 0;
 
+if (localStorage.getItem('userRating')) {
+    currentRating = parseInt(localStorage.getItem('userRating'));
+    updateStars(currentRating);
+    ratingValue.textContent = currentRating;
+}
 stars.forEach(star => {
     star.addEventListener('click', () => {
         const index = parseInt(star.getAttribute('data-index'));
         currentRating=index
         updateStars(currentRating);
         ratingValue.textContent = currentRating;
+        localStorage.setItem("userRating",currentRating);
     });
     star.addEventListener('mouseover', () => {
         const index = parseInt(star.getAttribute('data-index'));
