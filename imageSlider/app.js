@@ -16,6 +16,7 @@ const goPrev=()=>{
         count--;
         slideMain();
         nextButton.disabled=false
+        
     }
    
     
@@ -36,9 +37,13 @@ const slideMain=()=>{
     })
     if(count===3){
         nextButton.disabled=true;
+        nextButton.classList.add('disabled');
+        
     }
     else if(count===0){
         prevButton.disabled=true;
+        prevButton.classList.add('disabled');
+
     }
     
 }
